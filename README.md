@@ -1,33 +1,16 @@
-# Azure-App-Services
-Deploying and Managing a Web Application Using Azure App Service
+# Summary of Project Objectives
+## The project aimed to deploy and manage a highly available, scalable, and secure web application for EduConnect, an e-learning platform catering to students and teachers. The key objectives included
+* Setting Up Azure App Service: Creating an Azure App Service tailored to the performance and cost needs of the application.
+* Deploying the Web Application: Utilizing GitHub Actions for continuous integration and continuous deployment (CI/CD) to streamline updates and manage version control effectively.
+* Custom Domain and SSL Implementation: Configuring a custom domain and implementing SSL to ensure secure communication between users and the application.
+* Auto-Scaling Configuration: Setting up auto-scaling based on real-time performance metrics to handle varying traffic loads efficiently.
+* Monitoring with Application Insights: Implementing Application Insights to monitor application performance, availability, and user engagement, ensuring proactive management and timely responses to issues
 
-# Project Overview
-Azure App Service is a Platform For Hosting Web Applications, Mobile Backends, REST API, and Azure Functions. To set up The App service you will need an App Service Plan. This App Service plan specifies the OPERATING SYSTEM, REGION, INSTANCE SIZE, SCALE COUNT, and SKU / PRICING TIER. It provides 99.95% SLA, which translates to 43 seconds downtime per day, 5 minutes per week, and 22 hours per month downtime. It has stagging and deployment slots which are separate environments for deploying either to test or stage and then swapping with production. it consists of 3 main pricing tier 
-1. Shared - Free, shared tier
-2. Dedicated - Basic, Standard, Premium tier
-3. Isolated
-
-The pricing tier differs in: 
-- CPU, Memory, Storage,
-- Auto-Scale
-- Backups
-- Staging Slots
-- Custom Domain
-
-It supports applications developed in the following languages and frameworks:
-- C#
-- .NET
-- .NET CORE
-- PHP
-- JAVA
-- RUBY
-- NODE JS
-- PYTHON
-
-Authentication and authorization are built into Azure App Service, so no extra code is required. It integrates with major login providers such as  Facebook, Google, or any OpenID Connect provider
+# Archutectural drawing
 
 
-# Process using the Azure portal in 5 STEPS
+
+# Process using the Azure portal is in Stages
 # Create an Azure App Service
 
 I created a Resource group "EduConnectWebAppRG" that will house all the resources for this project and be hosted in the North Europe Region. Azure Resource Group holds resources in a logical folder for easy management of the resources.
