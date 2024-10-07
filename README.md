@@ -6,7 +6,8 @@
 * Auto-Scaling Configuration: Setting up auto-scaling based on real-time performance metrics to handle varying traffic loads efficiently.
 * Monitoring with Application Insights: Implementing Application Insights to monitor application performance, availability, and user engagement, ensuring proactive management and timely responses to issues
 
-# Archutectural drawing
+# Archutectural Drawing
+![ArchDrw](https://github.com/user-attachments/assets/dedb8217-e3ae-4622-9c81-fca704bb92ea)
 
 
 
@@ -33,7 +34,7 @@ After carefully reviewed the setup I then CREATED my Webapp.
 After Deploying my App service, I went to the DEPLOYMENT CENTER selected GITHUB as my source, and Authorized it, I chose my repository and branch where my code will be hosted on GitHub.
 ![Screenshot 2024-10-07 092102](https://github.com/user-attachments/assets/0178e032-7c44-4d08-8027-e3f061aebd5e)
 
-After setting up the DEPLOYMENT CENTER, I went to the DEPLOYMENT SLOT where I added a slot called STAGING and cloned the setting from the Production Slot, this allows me to test updates in Staging Slot before Pushing to production 
+After setting up the DEPLOYMENT CENTER, I went to the DEPLOYMENT SLOT where I added a slot called STAGING and cloned the setting from the Production Slot, this allows me to test updates in the Staging Slot and later SWAP with the production slot.
 ![Screenshot 2024-10-07 094319](https://github.com/user-attachments/assets/313af34d-a164-46c5-b507-2e6f8da55162)
 
 # Configure Custom Domain and SSL
@@ -60,3 +61,7 @@ I Navigated to the Application insight of the web app and create an alert rule
 * **Severity**: Sev 3
 ![Screenshot 2024-10-07 112159](https://github.com/user-attachments/assets/19cd6f4d-5329-48b1-ab0e-518e7e5101b1)
 ![Screenshot 2024-10-07 111644](https://github.com/user-attachments/assets/2df5cb9f-98b4-4721-8974-3f0817c0f1d9)
+
+# Challenges and Lessons I Learned
+Challenges: most challenges I faced were during the deployment process, particularly in configuring CI/CD pipelines and managing custom domain settings. These issues were addressed through detailed documentation.
+Lessons: Testing in the staging environment before deploying to production is very important, it minimizes risks and ensured a smoother user experience upon launch.
