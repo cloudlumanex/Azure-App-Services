@@ -43,6 +43,7 @@ After creating a resource group I searched for Azure App Service and chose Web A
 * **Application Insight**: Enable
 
 After carefully reviewed the setup I then CREATED my Webapp.
+![Screenshot 2024-10-07 090927](https://github.com/user-attachments/assets/429cad2d-1b78-47a9-b100-0739d42243e9)
 
 
 
