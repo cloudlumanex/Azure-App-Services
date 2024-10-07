@@ -68,4 +68,11 @@ To Monitor Scaling I navigated to Metrics where I tracked the performance of the
 * CPU TIME
 * RESPONSE TIME
 * THREAD COUNT
+![Screenshot 2024-10-07 103520](https://github.com/user-attachments/assets/ca2489ec-73e7-421b-9272-998723458944)
+
+# Impement Application Insight
+I Navigated to the Application insight of the web app and create an alert rule 
+* **Condition**: Availability and failed Request
+* **ActionGroup**: Application insight Smart detection
+* **Severity**: Sev 3
 
