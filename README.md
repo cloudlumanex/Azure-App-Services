@@ -46,7 +46,11 @@ After carefully reviewed the setup I then CREATED my Webapp.
 ![Screenshot 2024-10-07 090927](https://github.com/user-attachments/assets/429cad2d-1b78-47a9-b100-0739d42243e9)
 
 # Step 2: Deploy the Web Application Using GitHub Actions
-After Deploying my App service, I went to the DEPLOYMENT CENTER selected GITHUB as my source, and Authorized it.
+After Deploying my App service, I went to the DEPLOYMENT CENTER selected GITHUB as my source, and Authorized it, I chose my repository and branch where my code will be hosted on GitHub.
+![Screenshot 2024-10-07 092102](https://github.com/user-attachments/assets/0178e032-7c44-4d08-8027-e3f061aebd5e)
+
+After setting up the DEPLOYMENT CENTER, I went to DEPLOYMENT SLOT where I added a slot called STAGING and cloned the setting from the Production Slot, this allows me to test updates in Staging Slot before Pushing to production 
+
 
 
 
