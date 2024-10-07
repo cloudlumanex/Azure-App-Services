@@ -45,6 +45,8 @@ After creating a resource group I searched for Azure App Service and chose Web A
 After carefully reviewed the setup I then CREATED my Webapp.
 ![Screenshot 2024-10-07 090927](https://github.com/user-attachments/assets/429cad2d-1b78-47a9-b100-0739d42243e9)
 
+# Step 2: Deploy the Web Application Using GitHub Actions
+After Deploying my App service, I went to the DEPLOYMENT CENTER selected GITHUB as my source, and Authorized it.
 
 
 
