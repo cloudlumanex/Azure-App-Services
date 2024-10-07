@@ -75,4 +75,5 @@ I Navigated to the Application insight of the web app and create an alert rule
 * **Condition**: Availability and failed Request
 * **ActionGroup**: Application insight Smart detection
 * **Severity**: Sev 3
-
+![Screenshot 2024-10-07 112159](https://github.com/user-attachments/assets/19cd6f4d-5329-48b1-ab0e-518e7e5101b1)
+![Screenshot 2024-10-07 111644](https://github.com/user-attachments/assets/2df5cb9f-98b4-4721-8974-3f0817c0f1d9)
