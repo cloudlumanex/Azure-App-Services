@@ -60,9 +60,9 @@ I selected the Custom Domain, then I added the educonnect domain name which is w
 # Enable Auto-Scaling
 For Auto-Scaling I navigated to Scale Out and added these Rules:
 * Metric: CPU Percentage 
-* Condition: Set a threshold (if CPU usage > 70% for 5 minutes)
-* Action: Increase the instance count (increase by 1 instance)
-
+* Condition: if CPU usage > 70% for 5 minutes
+* Action: increase by 1 instance
+![Screenshot 2024-10-07 102548](https://github.com/user-attachments/assets/2aef12df-3dab-46ef-bc6f-9fc998abd184)
 
 To Monitor Scaling I navigated to Metrics where I tracked the performance of the app using:
 * CPU TIME
