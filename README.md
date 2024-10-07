@@ -28,7 +28,7 @@ Authentication and authorization are built into Azure App Service, so no extra c
 
 
 # Process using the Azure portal in 5 STEPS
-# STEP 1
+# Create an Azure App Service
 
 I created a Resource group "EduConnectWebAppRG" that will house all the resources for this project and be hosted in the North Europe Region. Azure Resource Group holds resources in a logical folder for easy management of the resources.
 After creating a resource group I searched for Azure App Service and chose Web App. I then proceeded to set up and configure the web app: 
@@ -45,7 +45,7 @@ After creating a resource group I searched for Azure App Service and chose Web A
 After carefully reviewed the setup I then CREATED my Webapp.
 ![Screenshot 2024-10-07 090927](https://github.com/user-attachments/assets/429cad2d-1b78-47a9-b100-0739d42243e9)
 
-# Step 2: Deploy the Web Application Using GitHub Actions
+# Deploy the Web Application Using GitHub Actions
 
 After Deploying my App service, I went to the DEPLOYMENT CENTER selected GITHUB as my source, and Authorized it, I chose my repository and branch where my code will be hosted on GitHub.
 ![Screenshot 2024-10-07 092102](https://github.com/user-attachments/assets/0178e032-7c44-4d08-8027-e3f061aebd5e)
@@ -53,11 +53,19 @@ After Deploying my App service, I went to the DEPLOYMENT CENTER selected GITHUB 
 After setting up the DEPLOYMENT CENTER, I went to the DEPLOYMENT SLOT where I added a slot called STAGING and cloned the setting from the Production Slot, this allows me to test updates in Staging Slot before Pushing to production 
 ![Screenshot 2024-10-07 094319](https://github.com/user-attachments/assets/313af34d-a164-46c5-b507-2e6f8da55162)
 
-# Step 3:Configure Custom Domain and SSL
-I selected the Custom Domain, then I added the educonnect domain name which is www.educonnect.org  after configuring my Custom Domain, I went to TLS/SSL setting and selected Private Key Certificates (.pfx) to upload the SSL certificate or create a Free App Service Managed Certificate for basic SSL after which I bind the SSL certificate to my Custom Domain.
+# Configure Custom Domain and SSL
+I selected the Custom Domain, then I added the educonnect domain name which is www.educonnect.org  after configuring my Custom Domain, I chose app service management and uploaded the SSL certificate Service after which had to bind the SSL certificate to my Custom Domain.
+<img width="936" alt="Screenshot 2024-10-07 095514" src="https://github.com/user-attachments/assets/10e906f4-58db-41e4-b0ab-358db5fe88f2">
+
+# Enable Auto-Scaling
+For Auto-Scaling I navigated to Scale Out and added these Rules:
+* Metric: CPU Percentage 
+* Condition: Set a threshold (if CPU usage > 70% for 5 minutes)
+* Action: Increase the instance count (increase by 1 instance)
 
 
-
-
-
+To Monitor Scaling I navigated to Metrics where I tracked the performance of the app using:
+* CPU TIME
+* RESPONSE TIME
+* THREAD COUNT
 
